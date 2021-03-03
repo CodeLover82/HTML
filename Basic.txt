@@ -60,6 +60,15 @@ width / height : 이미지의 크기(가로, 세로) 지정.
 
 ex) <img src="/examples/images/img_monalisa.png" alt="모나리자" width="100" height="30">
 
+< input type="button" >
+: 그 자체로는 버튼의 모양만 있지 아무 기능이 없다.
+이것은 자바스크립트를 이용할 때 활용도가 생긴다.
+
+value : 버튼에 표기될 이름.
+
+ex)
+<input type="button" value="버튼" onclick="aler("hello")">
+
 < input type="checkbox" >
 중복 선택 가능한 목록.
 
@@ -71,6 +80,14 @@ ex)
 붉은색 : <input type="checkbox" name="color" value="red">
 검은색 : <input type="checkbox" name="color" value="black" checked>
 파란색 : <input type="checkbox" name="color" value="blue">
+
+< input type="hidden" >
+사람의 눈에 보이지 않고 UI는 없지만 서버에 전송될 때 숨겨져 전송된다.
+
+value : 데이터 값.
+
+ex)
+<input type="hidden" name="이름" value="egoing">
 
 < input type="text" >
 문장 입력 양식. 단순한 텍스트를 입력할 때 사용.
@@ -104,6 +121,12 @@ ex)
 검은색 : <input type="radio" name="color" value"black">
 파란색 : <input type="radio" name="color" value"blue">
 
+< input type="reset" >
+사용자가입력한 모든 폼을 리셋.
+
+ex)
+< input type="reset" >
+
 < input type="submit" >
 form의 값을 전송하는 버튼. 
 
@@ -111,6 +134,22 @@ value : 버튼의 이름 변경.
 
 ex)
 <input type="submit" value="전송"> 
+
+< label >
+form 요소의 이름과 form 요소를 명시적으로 연결시켜주기 위해 사용.
+label의 for 속성값과 form 요소의 id 속성값을 같게 적어주어야 한다.
+label을 사용하면 이름을 클릭했을 경우 해당 form 요소를 클릭한 것처럼 동작.
+스크린 리더기를 통해 듣게 되면 해당 form 요소에 접근 시 label을 함께 읽어주게 된다.
+
+for : 누구의 이름표인지 설정. 태그의 ID를 참조.
+
+ex)
+<label for="id_txt">text :</label> 
+<input id="id_txt" type="text" name="id" value="default value">
+ex)
+<label>
+    text: <input type="text" name="id" value="default value">
+</label>
 
 < ol >
 순서가 있는 리스트.
@@ -205,7 +244,6 @@ ex)
  
 
 ---------
-
 
 
 
