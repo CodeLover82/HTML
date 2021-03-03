@@ -60,6 +60,34 @@ width / height : 이미지의 크기(가로, 세로) 지정.
 
 ex) <img src="/examples/images/img_monalisa.png" alt="모나리자" width="100" height="30">
 
+<input type="text">
+문장 입력 양식. 단순한 텍스트를 입력할 때 사용.
+
+name : 서버로 보낼 때 지정되는 데이터의 이름.
+value : 기본값.
+placeholder : 사용자가 값을 입력하기 전에 미리 입력되어 있는 문장으로 입력 시작시 사라짐.
+
+ex)
+<input type="text" name="id" value="default value"> 
+
+<input type="password">
+암호를 입력하는 양식. 값이 노출되지 않음.
+
+name : 서버로 보낼 때 지정되는 데이터의 이름.
+value : 기본값.
+placeholder : 사용자가 값을 입력하기 전에 미리 입력되어 있는 문장으로 입력 시작시 사라짐.
+
+ex)
+<input type="password" name="pwd" placeholder="암호 입력">
+
+<input type="submit">
+form의 값을 전송하는 버튼. 
+
+value : 버튼의 이름 변경.
+
+ex)
+<input type="submit" value="전송"> 
+
 < ol >
 순서가 있는 리스트.
 
