@@ -18,6 +18,25 @@ ex) <a href="http://www.naver.com/" target="_blank">네이버</a>
 
 ex) <br>
 
+<form>
+폼 데이터를 그룹화하여 실제 서버로 전송해주는 역할.
+
+action : 폼 데이터를 처리하기 위한 서버의 주소.
+method : 데이터를 전송하는 방식을 지정.
+- get : URL을 통해서 데이터를 전달. (default)
+- post : 숨겨서 데이터를 전달.
+
+ex)
+<form action=""http://localhost/login.php" method="post">
+    <p> 아이디 : <input type="text" name="id" value="default value"> </p>
+    <p> 비밀번호 : <input type="password" name="pwd" value="default value"> </p>
+    <p> 주소 : <input type="text" name="address"> </p>
+    <input type="submit"> 
+    <p>textarea :
+        <textarea cols="30" rows="3">default value</textarea>
+    </p>
+</form> 
+
 < head >
 본문 내용과 관련되지 않는 태그.
 
@@ -90,6 +109,17 @@ ex)
     </tfoot>
 </table>
 
+< textarea >
+여러 줄의 텍스트를 입력할 때 사용.
+
+placeholder : 사용자가 값을 입력하기 전에 미리 입력되어 있는 문장으로 입력 시작시 사라짐.
+rows : 행 길이를 조절
+cols : 열 길이를 조절
+태그 사이의 문장이 기본값으로 적혀 있음.
+
+ex)
+<textarea cols="30" rows="3">자기소개를 하세요.</textarea>
+
 < title >
 웹 페이지의 제목.
 
@@ -109,3 +139,10 @@ ex)
  
 
 ---------
+
+
+
+
+
+
+
