@@ -61,6 +61,35 @@ ex) <p> HTML 최초의 일반 공개 설명은.. </p>
 
 ex) <strong>힘</strong> 
 
+< table >
+표.
+
+border : 각 데이터의 테두리 두께.
+colspan : 열 병합.
+rowspan : 행 병합.
+
+ex)
+<table border="2">
+    <thead>
+        <tr>
+            <th>이름</th> <th>성별</th> <th>주소</th> <th>회비</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>         
+            <td>최진혁</td> <td>남</td> <td rowspan="2">청주</td> <td>500</td>
+        </tr>
+        <tr>         
+            <td>최유빈</td> <td>여</td> <td>1000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>         
+            <td colspan="3">합계</td> <td>1500</td>
+        </tr>
+    </tfoot>
+</table>
+
 < title >
 웹 페이지의 제목.
 
@@ -80,6 +109,3 @@ ex)
  
 
 ---------
-
-
-button
